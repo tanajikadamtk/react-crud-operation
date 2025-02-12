@@ -1,0 +1,18 @@
+@mixin font-size($size) {
+    font-size: calc((16px / 10px) * 1rem);
+
+}
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+@mixin btn-common{
+        all: unset;
+        padding: 8px 20px;
+        font-size: 16px;
+        border: 0;
+        font-weight: 500;
+        border-radius: 8px;
+}

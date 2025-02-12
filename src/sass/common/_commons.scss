@@ -1,0 +1,121 @@
+.container {
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.heading1 {
+    font-size: 88px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    line-height: 1;
+}
+
+.page-heading {
+    font-size: 50px;
+    font-weight: 700
+}
+
+.btn-red {
+    @include btn-common;
+    background-color: $color-red;
+    color: $color-white;
+}
+
+.btn-transparent {
+    @include btn-common;
+    background-color: transparent;
+    color: $color-grey;
+    border: 1px solid $color-grey;
+
+}
+
+.visible-xs {
+    display: none;
+}
+
+.hidden-xs {
+    display: block;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+}
+
+.list-type-none {
+    padding: 0;
+    list-style-type: none;
+}
+
+
+.mt-50,
+.my-50 {
+    margin-top: 50px;
+}
+
+.mb-50,
+.my-50 {
+    margin-bottom: 50px;
+}
+
+.para-w-80 {
+    width: 80%;
+}
+
+.btn-wrps {
+    display: flex;
+    align-items: center;
+}
+
+.btn-outline {
+    @include btn-common;
+    background-color: $color-black;
+    color: $color-white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+.btn-transparent{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+@media screen and (max-width:767px) {
+    .hidden-xs {
+        display: none;
+    }
+
+    .visible-xs {
+        display: block;
+    }
+
+    .heading1 {
+        font-size: 50px;
+    }
+
+    .home-para {
+        width: 100%;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        width: 80%;
+        background-color: #000000;
+        padding: 20px;
+        top: 60px;
+        right: -100%;
+        transition: 0.3s ease-in-out;
+    }
+
+    .navbar-collapse.show {
+        right: 0;
+        z-index: 1;
+    }
+
+}

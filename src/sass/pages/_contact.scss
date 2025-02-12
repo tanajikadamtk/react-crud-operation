@@ -1,0 +1,46 @@
+.contact-form {
+    .btn-transparent {
+        width: 91.5%;
+    }
+
+    .form-control {
+        display: flex;
+        flex-direction: column;
+        border: 0;
+        position: relative;
+
+        label {
+            display: inline-block;
+            position: absolute;
+            top: -6px;
+            left: 30px;
+            padding: 0px 8px;
+            background-color: $color-white;
+            color: $color-black;
+            font-weight: 600;
+        }
+
+        input {
+            padding: 8px 15px;
+
+        }
+
+        textarea {
+            min-height: 100px;
+            padding: 15px;
+        }
+    }
+
+    .submit-wrp {
+        justify-content: end;
+        align-items: end;
+
+        .btn-outline {
+            width: fit-content;
+        }
+    }
+
+    .service-img {
+        margin-top: -60px;
+    }
+}
